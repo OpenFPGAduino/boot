@@ -1,0 +1,27 @@
+# Compiled Binary files
+*.bin
+*.elf
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.rpt
+*.summary
+*.smsg
+keil/output/
+si/
+
+# Compiled Dynamic libraries
+*.so
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Trash
+*.bak
+*.lst
+*.uvgui.*
+*.dep
