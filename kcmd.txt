@@ -1,0 +1,1 @@
+init=/bin/systemd console=ttyS0 mem=128M ip=dhcp root=/dev/mmcblk0p2 elevator=noop rw rootwait noinitrd    
