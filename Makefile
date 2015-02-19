@@ -4,7 +4,7 @@ AR=arm-none-linux-gnueabi-ar
 SRC=$(wildcard src/*.c src/fatfs/*.c src/drivers/*.c)
 OBJ=$(addprefix ./, $(addsuffix .o, $(basename $(SRC))))
 INC=-I src/drivers/ -I src/fatfs/ -I src/boot -I src/
-TARGET=boot #boot.bin
+TARGET=boot.bin
 
 all: $(TARGET)
 
