@@ -17,3 +17,7 @@ $(TARGET): $(OBJ)
 
 clean:
 	rm -f $(TARGET) $(SO) $(OBJ)
+
+format:
+	find . -name "*.c" -exec astyle -n {} \;
+	find . -name "*.h" -exec astyle -n {} \;	 
