@@ -1,5 +1,5 @@
 # Makefile for building keil projects
-KEIL=wine "/home/zhizhouli/.wine/drive_c/Keil_v5/UV4/UV4.exe"
+KEIL=wine UV4.exe
 TMP=/tmp/keil.out
 NULL=/dev/null
 
@@ -9,7 +9,7 @@ all:
 	@cat $(TMP)
 
 clean:
-	rm -f keil/output
+	rm -rf keil/output
 	rm boot.bin
 
 format:
