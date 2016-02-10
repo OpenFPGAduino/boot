@@ -1,6 +1,7 @@
 # Compiled Binary files
 *.bin
 *.elf
+*.out
 
 # Compiled Object files
 *.slo
