@@ -5,7 +5,8 @@ NULL=/dev/null
 
 # Will prevent it from exiting even when somehing failied
 all:
-	-@$(KEILPATH) -j0 -b -o $(TMP) keil/mboot.uvproj 2> $(NULL);
+	rm -rf $(TMP)
+	-@xvfb-run $(KEILPATH) -j0 -b -o $(TMP) keil/mboot.uvproj 2> $(NULL);
 	@cat $(TMP)
 
 clean:
